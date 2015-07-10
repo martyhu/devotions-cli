@@ -12,7 +12,7 @@ In my personal journey to know more scripture, I wanted a new kind of daily
 devotion... one for my command line. This little cli will give you a new verse
 from the ESV every day.
 
-### Install
+### Installation
 
 ```sh
 npm install -g devotions-cli
@@ -27,7 +27,7 @@ the evil day, and having done all, to stand firm.
                                                           Ephesians 6:13 (ESV)
 ```
 
-### Request an API Key
+#### Request an API Key
 
 The devotions cli will use a development API key by default, just to get your
 started. Please register for your own API key over
@@ -39,6 +39,10 @@ When you have your own API key, the devotions cli can be run as follows:
 $ ESV_API_KEY=1234 devotion
 ```
 
-### Thanks
+#### Thanks
 
 Special thanks to the [ESV Bible Web Service](http://www.esvapi.org/)
+
+#### License
+
+[MIT](http://opensource.org/licenses/MIT) © [Wayne Ashley Berry](https://twitter.com/waynethebrain)

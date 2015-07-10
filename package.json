@@ -1,0 +1,39 @@
+{
+  "name": "devotions-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "tape test.js"
+  },
+  "bin": {
+    "devotion": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wayneashleyberry/devotions-cli.git"
+  },
+  "keywords": [
+    "esv",
+    "bible",
+    "daily",
+    "scripture",
+    "verse",
+    "devotions"
+  ],
+  "author": "Wayne Ashley Berry <wayneashleyberry@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cache-swap": "^0.2.1",
+    "chalk": "^1.1.0",
+    "got": "^3.3.0",
+    "window-size": "^0.1.2",
+    "wordwrap": "^1.0.0"
+  },
+  "devDependencies": {
+    "bin-check": "^2.0.0",
+    "standard": "^4.5.2",
+    "tape": "^4.0.0"
+  }
+}

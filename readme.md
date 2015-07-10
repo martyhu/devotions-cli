@@ -27,6 +27,18 @@ the evil day, and having done all, to stand firm.
                                                           Ephesians 6:13 (ESV)
 ```
 
+### Request an API Key
+
+The devotions cli will use a development API key by default, just to get your
+started. Please register for your own API key over
+[here](http://www.esvapi.org/signup).
+
+When you have your own API key, the devotions cli can be run as follows:
+
+```sh
+$ ESV_API_KEY=1234 devotion
+```
+
 ### Thanks
 
 Special thanks to the [ESV Bible Web Service](http://www.esvapi.org/)

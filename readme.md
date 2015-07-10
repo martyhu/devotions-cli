@@ -41,7 +41,7 @@ $ ESV_API_KEY=1234 devotion
 
 #### Thanks
 
-Special thanks to the [ESV Bible Web Service](http://www.esvapi.org/)
+Special thanks to the [ESV Bible Web Service](http://www.esvapi.org/).
 
 #### License
 

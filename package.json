@@ -28,6 +28,7 @@
     "cache-swap": "^0.2.1",
     "chalk": "^1.1.0",
     "got": "^3.3.0",
+    "moment-timezone": "^0.4.0",
     "window-size": "^0.1.2",
     "wordwrap": "^1.0.0"
   },

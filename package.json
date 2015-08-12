@@ -1,6 +1,6 @@
 {
   "name": "devotions-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Daily devotions, delivered to your command line.",
   "main": "index.js",
   "scripts": {

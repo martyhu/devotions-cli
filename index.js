@@ -3,6 +3,7 @@ var cache = require('./lib/cache.js')
 var key = '/v2/test/dailyVerse'
 
 var opt = {
+  timeout: 10000,
   query: {
     key: process.env.ESV_API_KEY || 'IP',
     'include-footnotes': false,

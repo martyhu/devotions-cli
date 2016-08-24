@@ -33,7 +33,7 @@
     "chalk": "^1.1.0",
     "got": "^6.3.0",
     "moment-timezone": "^0.5.5",
-    "window-size": "^0.1.2",
+    "window-size": "^0.2.0",
     "wordwrap": "^1.0.0"
   },
   "devDependencies": {

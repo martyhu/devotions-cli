@@ -1,7 +1,7 @@
 'use strict'
 
-let test = require('tape')
-let binCheck = require('bin-check')
+var test = require('tape')
+var binCheck = require('bin-check')
 
 test('check bin', function (t) {
   t.plan(1)

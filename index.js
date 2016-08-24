@@ -1,8 +1,9 @@
-var got = require('got')
-var cache = require('./lib/cache.js')
-var storageKey = 'devotions-cli'
+'use strict'
 
-var opt = {
+let got = require('got')
+let cache = require('./lib/cache.js')
+let storageKey = 'devotions-cli'
+let opt = {
   timeout: 10000,
   query: {
     key: process.env.ESV_API_KEY || 'IP',

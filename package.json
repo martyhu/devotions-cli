@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "bin-check": "^4.0.0",
-    "standard": "^5.0.0",
+    "standard": "^8.0.0",
     "tape": "^4.0.0"
   }
 }

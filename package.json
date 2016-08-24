@@ -3,6 +3,9 @@
   "version": "1.0.7",
   "description": "Daily devotions, delivered to your command line.",
   "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
   "scripts": {
     "pretest": "standard",
     "test": "tape test.js"
@@ -28,7 +31,7 @@
   "dependencies": {
     "cache-swap": "^0.2.1",
     "chalk": "^1.1.0",
-    "got": "^4.1.0",
+    "got": "^6.3.0",
     "moment-timezone": "^0.4.0",
     "window-size": "^0.1.2",
     "wordwrap": "^1.0.0"

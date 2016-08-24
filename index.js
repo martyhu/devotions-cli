@@ -1,6 +1,7 @@
 var got = require('got')
 var cache = require('./lib/cache.js')
 var key = '/v2/test/dailyVerse'
+var storage_key = 'devotions-cli';
 
 var opt = {
   timeout: 10000,
@@ -14,21 +15,23 @@ var opt = {
 
 module.exports = {
   get: function (callback) {
-    cache.get(key, function (err, cached) {
+    cache.get(storage_key, function (err, cached) {
       if (cached) {
         return callback(err, cached.contents)
       }
-      got('www.esvapi.org/v2/rest/dailyVerse', opt, function (err, data, res) {
-        if (err) {
-          return callback(err)
-        }
-        cache.set(key, data, function (err) {
-          if (err) {
-            return callback(err)
-          }
-          callback(err, data)
+
+      got('www.esvapi.org/v2/rest/dailyVerse', opt)
+        .then(res => {
+            cache.set(storage_key, res.body, function (err) {
+              if (err) {
+                return callback(err)
+              }
+              callback(err, res.body)
+            })
         })
-      })
+        .catch(err => {
+          return callback(err)
+        })
     })
   }
 }

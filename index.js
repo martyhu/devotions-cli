@@ -20,7 +20,7 @@ module.exports = {
         return callback(err, cached.contents)
       }
 
-      got('www.esvapi.org/v2/rest/dailyVerse', opt)
+      got('http://www.ourmanna.com/verses/api/get?format=text&order=random', opt)
         .then(res => {
           cache.set(storageKey, res.body, function (err) {
             if (err) {

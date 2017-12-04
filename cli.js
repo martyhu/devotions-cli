@@ -8,7 +8,7 @@ function main () {
     if (err) {
       return console.error(err)
     }
-    console.log(fmt(data))
+    console.log(data)
   })
 }
 
